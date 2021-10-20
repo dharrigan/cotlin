@@ -1,0 +1,9 @@
+.clj-kondo/.cache
+.cpcache
+.gradle
+.idea
+.lsp/.cache
+build
+out
+target
+!gradle/wrapper/gradle-wrapper.jar

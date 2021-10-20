@@ -1,0 +1,13 @@
+{:paths ["src/main/clj" "resources"]
+
+ :deps {org.clojure/clojure {:mvn/version "1.10.3"}
+        org.jetbrains.kotlin/kotlin-stdlib {:mvn/version "1.5.31"}
+        org.jetbrains.kotlin/kotlin-stdlib-common {:mvn/version "1.5.31"}}
+
+ :aliases {:build {:deps {io.github.seancorfield/build-clj {:git/tag "v0.5.2" :git/sha "8f75b81"}}
+                   :ns-default build}
+
+           :dev {:extra-paths ["build/classes/kotlin/main"]}
+
+           :run {:extra-paths ["build/classes/kotlin/main"]
+                 :main-opts ["-m" "online.harrigan.cotlin.main"]}}}
